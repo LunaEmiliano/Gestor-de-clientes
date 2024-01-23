@@ -76,7 +76,6 @@ namespace WindowsFormsApp1
                "Incidencias: " + incidencias);
 
             cajaDeTexto.Text = "";
-            textBox1.Text = validar.ToString();
             listBox1.Items.Add(nombre);
 
         }
