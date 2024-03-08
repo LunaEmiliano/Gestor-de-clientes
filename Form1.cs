@@ -16,63 +16,61 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
+            dateTimePicker1.Value = DateTime.Now;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            comboBox1.Items.Add("Naftera");
-            comboBox1.Items.Add("Elédctrica");
+            comBoxAlimentacion.Items.Add("Naftera");
+            comBoxAlimentacion.Items.Add("Elédctrica");
+
+            comBoxTipoMaquina.Items.Add("Cortacesped");
+            comBoxTipoMaquina.Items.Add("Desmalezadora");
+            comBoxTipoMaquina.Items.Add("Bordeadora");
+            comBoxTipoMaquina.Items.Add("Otro");
         }
 
         private void btnCargarDatos_Click(object sender, EventArgs e)
         {
-            if ((cajaDeTexto.Text == "") || (textBox1.Text == "") || (comboBox1.Text == ""))
+            if ((txtBoxNombre.Text == "") || (txtBoxIncidencias.Text == "") || (comBoxAlimentacion.Text == ""))
             {
-                if (cajaDeTexto.Text == "")
+                if (txtBoxNombre.Text == "")
                 {
-                    cajaDeTexto.BackColor = Color.Red;
+                    txtBoxNombre.BackColor = Color.Red;
                 }
-                if (textBox1.Text == "")
+                if (txtBoxIncidencias.Text == "")
                 {
-                    textBox1.BackColor = Color.Red;
+                    txtBoxIncidencias.BackColor = Color.Red;
                 }
-                if (comboBox1.Text == "")
+                if (comBoxAlimentacion.Text == "")
                 {
-                    comboBox1.BackColor = Color.Red;
+                    comBoxAlimentacion.BackColor = Color.Red;
                 }
                 MessageBox.Show("Por favor, complete el campo faltante");
-                cajaDeTexto.BackColor = Color.White;
-                textBox1.BackColor = Color.White;
-                comboBox1.BackColor = Color.White;
+                txtBoxNombre.BackColor = Color.White;
+                txtBoxIncidencias.BackColor = Color.White;
+                comBoxAlimentacion.BackColor = Color.White;
                 return;
             }
 
-            string nombre = cajaDeTexto.Text;
+            string nombre = txtBoxNombre.Text;
             DateTime fecha = dateTimePicker1.Value;
-            string primeraVez = checkBox1.Checked == true ? "Primera vez" : "Cliente habitual";
-            string combustible = comboBox1.Text;
-            string incidencias = textBox1.Text;
-
-            string tipoMaquina;
-            if (radioButton1.Checked)
-            {
-                tipoMaquina = "Bordeadora";
-            }
-            else if (radioButton2.Checked)
-            {
-                tipoMaquina = "Motoguadaña";
-            }
-            else
-            {
-                tipoMaquina = "Cortacesped";
-            }
+            string primeraVez = chckBoxPrimeraVez.Checked == true ? "Primera vez" : "Cliente habitual";
+            string combustible = comBoxAlimentacion.Text;
+            string incidencias = txtBoxIncidencias.Text;
+            string tipoMaquina = comBoxTipoMaquina.Text;
 
             MessageBox.Show("NUEVO TICKET AÑADIDO: \n \n \n" + "Nombre: " + nombre
                + "\n \nFecha de ingreso: " + fecha.ToShortDateString() + "\n \n" + "Tipo de cliente: " + primeraVez + "\n \n"
                + "Tipo de máquina: " + tipoMaquina + "\n \n" +
                "Incidencias: " + incidencias);
 
-            cajaDeTexto.Text = "";
+            txtBoxNombre.Text = "";
+            txtBoxIncidencias.Text = "";
+            comBoxAlimentacion.Text = "";
+            comBoxTipoMaquina.Text = "";
+
+            dateTimePicker1.Value = DateTime.Now;
             listBox1.Items.Add(nombre);
 
         }
