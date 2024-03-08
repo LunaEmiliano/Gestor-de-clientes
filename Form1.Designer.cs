@@ -40,7 +40,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.chckBoxPrimeraVez = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -51,6 +50,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.comBoxTipoMaquina = new System.Windows.Forms.ComboBox();
             this.comBoxAlimentacion = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtBoxMarca = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -177,16 +178,6 @@
             this.label4.TabIndex = 38;
             this.label4.Text = "Incidencias";
             // 
-            // chckBoxPrimeraVez
-            // 
-            this.chckBoxPrimeraVez.AutoSize = true;
-            this.chckBoxPrimeraVez.Location = new System.Drawing.Point(30, 90);
-            this.chckBoxPrimeraVez.Name = "chckBoxPrimeraVez";
-            this.chckBoxPrimeraVez.Size = new System.Drawing.Size(88, 17);
-            this.chckBoxPrimeraVez.TabIndex = 39;
-            this.chckBoxPrimeraVez.Text = "Primera visita";
-            this.chckBoxPrimeraVez.UseVisualStyleBackColor = true;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -245,6 +236,8 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.txtBoxMarca);
+            this.groupBox4.Controls.Add(this.label9);
             this.groupBox4.Controls.Add(this.comBoxAlimentacion);
             this.groupBox4.Controls.Add(this.comBoxTipoMaquina);
             this.groupBox4.Controls.Add(this.label3);
@@ -253,7 +246,6 @@
             this.groupBox4.Controls.Add(this.label4);
             this.groupBox4.Controls.Add(this.label6);
             this.groupBox4.Controls.Add(this.txtBoxIncidencias);
-            this.groupBox4.Controls.Add(this.chckBoxPrimeraVez);
             this.groupBox4.Location = new System.Drawing.Point(20, 144);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(376, 232);
@@ -285,6 +277,22 @@
             this.comBoxAlimentacion.Name = "comBoxAlimentacion";
             this.comBoxAlimentacion.Size = new System.Drawing.Size(121, 21);
             this.comBoxAlimentacion.TabIndex = 41;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(27, 94);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(82, 13);
+            this.label9.TabIndex = 42;
+            this.label9.Text = "Marca y modelo";
+            // 
+            // txtBoxMarca
+            // 
+            this.txtBoxMarca.Location = new System.Drawing.Point(122, 91);
+            this.txtBoxMarca.Name = "txtBoxMarca";
+            this.txtBoxMarca.Size = new System.Drawing.Size(217, 20);
+            this.txtBoxMarca.TabIndex = 43;
             // 
             // Form1
             // 
@@ -326,7 +334,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.CheckBox chckBoxPrimeraVez;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox txtBoxDNI;
         private System.Windows.Forms.Label label7;
@@ -336,6 +343,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox comBoxTipoMaquina;
         private System.Windows.Forms.ComboBox comBoxAlimentacion;
+        private System.Windows.Forms.TextBox txtBoxMarca;
+        private System.Windows.Forms.Label label9;
     }
 }
 
