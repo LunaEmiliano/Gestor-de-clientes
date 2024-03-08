@@ -24,33 +24,34 @@ namespace WindowsFormsApp1
             comboBox1.Items.Add("Elédctrica");
         }
 
-        private void materialFlatButton2_Click(object sender, EventArgs e)
-        {   bool validar = true;
+        private void btnCargarDatos_Click(object sender, EventArgs e)
+        {
             if ((cajaDeTexto.Text == "") || (textBox1.Text == "") || (comboBox1.Text == ""))
             {
-                validar = false;
-                if(cajaDeTexto.Text == "")
+                if (cajaDeTexto.Text == "")
                 {
                     cajaDeTexto.BackColor = Color.Red;
                 }
-                if(textBox1.Text == "")
+                if (textBox1.Text == "")
                 {
                     textBox1.BackColor = Color.Red;
                 }
-                if(comboBox1.Text == "")
+                if (comboBox1.Text == "")
                 {
                     comboBox1.BackColor = Color.Red;
                 }
                 MessageBox.Show("Por favor, complete el campo faltante");
-                cajaDeTexto.BackColor= Color.White;
-                textBox1.BackColor= Color.White;
-                comboBox1.BackColor= Color.White;
+                cajaDeTexto.BackColor = Color.White;
+                textBox1.BackColor = Color.White;
+                comboBox1.BackColor = Color.White;
                 return;
             }
 
             string nombre = cajaDeTexto.Text;
             DateTime fecha = dateTimePicker1.Value;
             string primeraVez = checkBox1.Checked == true ? "Primera vez" : "Cliente habitual";
+            string combustible = comboBox1.Text;
+            string incidencias = textBox1.Text;
 
             string tipoMaquina;
             if (radioButton1.Checked)
@@ -65,10 +66,6 @@ namespace WindowsFormsApp1
             {
                 tipoMaquina = "Cortacesped";
             }
-
-            string combustible = comboBox1.Text;
-
-            string incidencias = textBox1.Text;
 
             MessageBox.Show("NUEVO TICKET AÑADIDO: \n \n \n" + "Nombre: " + nombre
                + "\n \nFecha de ingreso: " + fecha.ToShortDateString() + "\n \n" + "Tipo de cliente: " + primeraVez + "\n \n"

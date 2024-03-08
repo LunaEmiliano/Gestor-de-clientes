@@ -17,11 +17,11 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void materialFlatButton1_Click(object sender, EventArgs e)
+        private void btnAgregarOrden_Click(object sender, EventArgs e)
         {
             Form1 ventana = new Form1();
             ventana.ShowDialog();
-
         }
+
     }
 }
