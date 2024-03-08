@@ -31,6 +31,7 @@
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.btnBuscarOrden = new System.Windows.Forms.Button();
             this.btnAgregarOrden = new System.Windows.Forms.Button();
+            this.btnCerrarOrden = new System.Windows.Forms.Button();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
             this.SuspendLayout();
@@ -40,6 +41,7 @@
             // 
             // toolStripContainer1.ContentPanel
             // 
+            this.toolStripContainer1.ContentPanel.Controls.Add(this.btnCerrarOrden);
             this.toolStripContainer1.ContentPanel.Controls.Add(this.btnBuscarOrden);
             this.toolStripContainer1.ContentPanel.Controls.Add(this.btnAgregarOrden);
             this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(489, 86);
@@ -51,22 +53,31 @@
             // 
             // btnBuscarOrden
             // 
-            this.btnBuscarOrden.Location = new System.Drawing.Point(283, 28);
+            this.btnBuscarOrden.Location = new System.Drawing.Point(301, 28);
             this.btnBuscarOrden.Name = "btnBuscarOrden";
-            this.btnBuscarOrden.Size = new System.Drawing.Size(112, 23);
+            this.btnBuscarOrden.Size = new System.Drawing.Size(147, 23);
             this.btnBuscarOrden.TabIndex = 6;
-            this.btnBuscarOrden.Text = "Buscar orden";
+            this.btnBuscarOrden.Text = " Buscador de órdenes";
             this.btnBuscarOrden.UseVisualStyleBackColor = true;
             // 
             // btnAgregarOrden
             // 
-            this.btnAgregarOrden.Location = new System.Drawing.Point(54, 28);
+            this.btnAgregarOrden.Location = new System.Drawing.Point(33, 28);
             this.btnAgregarOrden.Name = "btnAgregarOrden";
             this.btnAgregarOrden.Size = new System.Drawing.Size(146, 23);
             this.btnAgregarOrden.TabIndex = 5;
-            this.btnAgregarOrden.Text = "Argegar nueva orden";
+            this.btnAgregarOrden.Text = "Abrir nueva orden";
             this.btnAgregarOrden.UseVisualStyleBackColor = true;
             this.btnAgregarOrden.Click += new System.EventHandler(this.btnAgregarOrden_Click);
+            // 
+            // btnCerrarOrden
+            // 
+            this.btnCerrarOrden.Location = new System.Drawing.Point(202, 28);
+            this.btnCerrarOrden.Name = "btnCerrarOrden";
+            this.btnCerrarOrden.Size = new System.Drawing.Size(75, 23);
+            this.btnCerrarOrden.TabIndex = 7;
+            this.btnCerrarOrden.Text = "Cerrar orden";
+            this.btnCerrarOrden.UseVisualStyleBackColor = true;
             // 
             // Form2
             // 
@@ -88,5 +99,6 @@
         private System.Windows.Forms.ToolStripContainer toolStripContainer1;
         private System.Windows.Forms.Button btnAgregarOrden;
         private System.Windows.Forms.Button btnBuscarOrden;
+        private System.Windows.Forms.Button btnCerrarOrden;
     }
 }
