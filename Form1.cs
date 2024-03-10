@@ -146,7 +146,7 @@ namespace WindowsFormsApp1
             dateTimePicker1.Value = DateTime.Now;
             
             
-            // Agregar nueva orden a la lista
+            // Agregar nueva orden al listBox
             listBoxClientes.Items.Add(nombre);
 
         }
