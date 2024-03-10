@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Media;
 using System.Text;
@@ -17,7 +18,23 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
+
+            // Iniciar siempre con la fecha actual
             dateTimePicker1.Value = DateTime.Now;
+
+            ////////// Mostrar últimos 10 clientes en ListBox //////////
+
+            ClienteNegocio clienteNegocio = new ClienteNegocio();
+            
+            var listarClientes = clienteNegocio.listarClientes();
+            var ultimosClientes = listarClientes.Skip(Math.Max(0, listarClientes.Count - 10));
+
+            foreach (var cliente in ultimosClientes)
+            {
+                listBoxClientes.Items.Add($"{cliente.Nombre} {cliente.Documento}");
+            }
+
+            ////////////////////////////////////////////////////////////
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -130,7 +147,7 @@ namespace WindowsFormsApp1
             
             
             // Agregar nueva orden a la lista
-            listBox1.Items.Add(nombre);
+            listBoxClientes.Items.Add(nombre);
 
         }
     }
