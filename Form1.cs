@@ -148,7 +148,6 @@ namespace WindowsFormsApp1
             
             // Agregar nueva orden al listBox
             listBoxClientes.Items.Add(nombre);
-
         }
     }
 }
