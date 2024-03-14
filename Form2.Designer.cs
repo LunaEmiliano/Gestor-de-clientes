@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
+            this.btnCerrarOrden = new System.Windows.Forms.Button();
             this.btnBuscarOrden = new System.Windows.Forms.Button();
             this.btnAgregarOrden = new System.Windows.Forms.Button();
-            this.btnCerrarOrden = new System.Windows.Forms.Button();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
             this.SuspendLayout();
@@ -51,6 +51,15 @@
             this.toolStripContainer1.TabIndex = 0;
             this.toolStripContainer1.Text = "toolStripContainer1";
             // 
+            // btnCerrarOrden
+            // 
+            this.btnCerrarOrden.Location = new System.Drawing.Point(202, 28);
+            this.btnCerrarOrden.Name = "btnCerrarOrden";
+            this.btnCerrarOrden.Size = new System.Drawing.Size(75, 23);
+            this.btnCerrarOrden.TabIndex = 7;
+            this.btnCerrarOrden.Text = "Cerrar orden";
+            this.btnCerrarOrden.UseVisualStyleBackColor = true;
+            // 
             // btnBuscarOrden
             // 
             this.btnBuscarOrden.Location = new System.Drawing.Point(301, 28);
@@ -59,6 +68,7 @@
             this.btnBuscarOrden.TabIndex = 6;
             this.btnBuscarOrden.Text = " Buscador de órdenes";
             this.btnBuscarOrden.UseVisualStyleBackColor = true;
+            this.btnBuscarOrden.Click += new System.EventHandler(this.btnBuscarOrden_Click);
             // 
             // btnAgregarOrden
             // 
@@ -69,15 +79,6 @@
             this.btnAgregarOrden.Text = "Abrir nueva orden";
             this.btnAgregarOrden.UseVisualStyleBackColor = true;
             this.btnAgregarOrden.Click += new System.EventHandler(this.btnAgregarOrden_Click);
-            // 
-            // btnCerrarOrden
-            // 
-            this.btnCerrarOrden.Location = new System.Drawing.Point(202, 28);
-            this.btnCerrarOrden.Name = "btnCerrarOrden";
-            this.btnCerrarOrden.Size = new System.Drawing.Size(75, 23);
-            this.btnCerrarOrden.TabIndex = 7;
-            this.btnCerrarOrden.Text = "Cerrar orden";
-            this.btnCerrarOrden.UseVisualStyleBackColor = true;
             // 
             // Form2
             // 

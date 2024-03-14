@@ -23,5 +23,10 @@ namespace WindowsFormsApp1
             ventana.ShowDialog();
         }
 
+        private void btnBuscarOrden_Click(object sender, EventArgs e)
+        {
+            Form3 ventana = new Form3();
+            ventana.ShowDialog();
+        }
     }
 }

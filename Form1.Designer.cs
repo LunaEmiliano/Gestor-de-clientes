@@ -136,6 +136,8 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox4.Controls.Add(this.txtBoxMarca);
             this.groupBox4.Controls.Add(this.label9);
             this.groupBox4.Controls.Add(this.comBoxAlimentacion);
@@ -223,6 +225,9 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox3.Controls.Add(this.txtBoxTelefono);
             this.groupBox3.Controls.Add(this.label8);
             this.groupBox3.Controls.Add(this.txtBoxDNI);
@@ -286,6 +291,7 @@
             // 
             // btnCargarDatos
             // 
+            this.btnCargarDatos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCargarDatos.Location = new System.Drawing.Point(344, 434);
             this.btnCargarDatos.Name = "btnCargarDatos";
             this.btnCargarDatos.Size = new System.Drawing.Size(82, 26);
