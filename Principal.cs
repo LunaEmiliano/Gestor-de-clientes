@@ -10,22 +10,22 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form2 : Form
+    public partial class Principal : Form
     {
-        public Form2()
+        public Principal()
         {
             InitializeComponent();
         }
 
         private void btnAgregarOrden_Click(object sender, EventArgs e)
         {
-            Form1 ventana = new Form1();
+            CargarOrden ventana = new CargarOrden();
             ventana.ShowDialog();
         }
 
         private void btnBuscarOrden_Click(object sender, EventArgs e)
         {
-            Form3 ventana = new Form3();
+            BuscarOrden ventana = new BuscarOrden();
             ventana.ShowDialog();
         }
     }

@@ -9,13 +9,14 @@ using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WindowsFormsApp1.Clases;
+using dominio;
+using negocio;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form1 : Form
+    public partial class CargarOrden : Form
     {
-        public Form1()
+        public CargarOrden()
         {
             InitializeComponent();
 
