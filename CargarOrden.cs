@@ -34,7 +34,7 @@ namespace WindowsFormsApp1
             {
                 listBoxClientes.Items.Add($"{cliente.Nombre} {cliente.Documento}");
             }
-
+            
             ////////////////////////////////////////////////////////////
         }
 
